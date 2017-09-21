@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+body
+{
+	font-family: 微软雅黑;
+}
+
+#care
+{
+	position: absolute;
+	left: 575px;
+    top: 57px;
+    color:red;
+}
+
+table
+{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+table tr td{text-align: center;height:50px;}
+
+span
+{
+	color:red;
+	font-size: 20px;
+}
+
+.colspan3
+{
+	line-height: 50px;
+	width:730px;
+	font-size: 18px;
+	font-family: 微软雅黑;
+}
+.colspan2
+{
+	line-height: 50px;
+	width:580px;
+	font-size: 18px;
+	font-family: 微软雅黑;
+}
+.colspan1
+{
+	line-height: 50px;
+	font-size: 18px;
+	width:290px;
+}
+
+.colspan1mid
+{
+	line-height: 50px;
+	font-size: 18px;
+	width:94px;
+}
+.colspaning
+{
+	line-height: 50px;
+	font-size: 18px;
+	width:430px;
+}
+
+.textmid
+{
+	width:730px;
+	height:150px;
+	font-size:14px;
+}
+.text
+{
+	width:860px;
+	height:150px;
+	font-size:14px;
+}
+.keyword-input
+{
+	width:130px;
+	line-height: 50px;
+}
+#keyword-input
+{
+	display: inline-block;
+}
+#btn
+{
+	width:100px;
+	height: 40px;
+}
+.warnning
+{
+	color:red;
+	font-size: 26px;
+}
+
+//信息提示部分
+.tishi
+{
+	font-size: 14px;
+}
+
+.tishi1
+{
+	color:#c0c0c0;
+}
+.tishi2
+{
+	color:red;
+}
+.subjectClassfied
+{
+	width:190px;
+	height:30px;
+}
+
+.year
+{
+	width:100px;
+	line-height: 50px;
+}
+
+#dep
+{
+	position:absolute;
+	top:207px;
+	left:962px;
+	width:290px;
+	height:200px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgba(231, 239, 239,0.8);
+	overflow-y:auto;
+	cursor: hand;
+}
+
+.list{
+	list-style-type: none;
+	font-size: 20px;
+	cursor:pointer;
+	color: rgb(3, 118, 180);
+}
+
+.list:HOVER {
+	background-color: gray;
+}
+
+
+
+
+
+
+

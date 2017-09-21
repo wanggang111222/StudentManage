@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<include file="struts-default.xml" />
+	<package name="Login" namespace="/" extends="struts-default">
+		<action name="login" class="loginAction" method="login">
+			<result name="success">/index.jsp</result>
+			<result name="error">/login_error.jsp</result>
+		</action>
+	</package>
+	<package name="Class" namespace="/" extends="struts-default">
+		<action name="clalist" class="classAction" method="clalist">
+			<result name="success">/Classlist.jsp</result>
+		</action>
+		<action name="deletecla" class="classAction" method="deletecla">
+			<result name="success">/Classlist.jsp</result>
+		</action>
+		<action name="addcla" class="classrAction" method="addcla">
+			<result name="success">/Classlist.jsp</result>
+		</action>
+		<action name="searchcla" class="classAction" method="searchcla">
+			<result name="success">/Classlist.jsp</result>
+		</action>
+		<action name="savecla" class="classAction" method="savecla">
+			<result name="success">/Classlist.jsp</result>
+		</action>
+	</package>
+	<package name="Student" namespace="/" extends="struts-default">
+		<action name="stulist" class="studentAction" method="stulist">
+			<result name="success">/Studentlist.jsp</result>
+		</action>
+		<action name="deletestu" class="studentAction" method="deletestu">
+			<result name="success">/Studentlist.jsp</result>
+		</action>
+		<action name="addstu" class="studentAction" method="addstu">
+			<result name="success">/Studentlist.jsp</result>
+		</action>
+		<action name="searchstu" class="studentAction" method="searchstu">
+			<result name="success">/Studentlist.jsp</result>
+		</action>
+		<action name="updatestu" class="studentAction" method="updatestu">
+			<result name="success">/Studentlist.jsp</result>
+		</action>
+		<action name="showclass" class="classAction" method="showclass">
+		</action>
+	</package>
+	<package name="Course" namespace="/" extends="struts-default">
+		<action name="courselist" class="courseAction" method="courselist">
+			<result name="success">/Courselist.jsp</result>
+		</action>
+		<action name="deletecourse" class="courseAction" method="deletecourse">
+			<result name="success">/Courselist.jsp</result>
+		</action>
+		<action name="addcourse" class="courseAction" method="addcourse">
+			<result name="success">/Courselist.jsp</result>
+		</action>
+		<action name="searchcourse" class="courseAction" method="searchcourse">
+			<result name="success">/Courselist.jsp</result>
+		</action>
+		<action name="savecourse" class="courseAction" method="savecourse">
+			<result name="success">/Courselist.jsp</result>
+		</action>
+	</package>
+	<package name="Score" namespace="/" extends="struts-default">
+		<action name="showcourse" class="courseAction" method="showcourse">
+		</action>
+		<action name="resultlist" class="scoreAction" method="resultlist">
+			<result name="success">/ResultInput.jsp</result>
+		</action>
+		<action name="addscore" class="scoreAction" method="addscore">
+		</action>
+		<action name="studentsco" class="scoreAction" method="studentsco">
+			<result name="success">/StudentResult.jsp</result>
+		</action>
+		<action name="stuperson" class="scoreAction" method="stuperson">
+		</action>
+		<action name="courlist" class="scoreAction" method="courlist">
+			<result name="success">/CourseResult.jsp</result>
+		</action>
+		<action name="coudetail" class="scoreAction" method="coudetail">
+		</action>
+	</package>
+</struts> 
